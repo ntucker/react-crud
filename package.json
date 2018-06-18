@@ -1,10 +1,36 @@
 {
   "name": "@anansi/react-crud",
   "version": "0.0.1",
+  "description": "Easy generation of data mutation interfaces",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ntucker/react-crud.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ntucker/react-crud/issues"
+  },
+  "homepage": "https://github.com/ntucker/react-crud#readme",
+  "keywords": [
+    "anansi",
+    "react",
+    "CRUD",
+    "admin"
+  ],
+  "author": "Nathaniel Tucker",
+  "license": "BSD",
   "sideEffects": false,
   "main": "dist/react-crud.cjs.js",
   "module": "dist/react-crud.esm.js",
   "browser": "dist/react-crud.umd.js",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "",
+    "pretest": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "ms": "^2.0.0"
   },
@@ -19,15 +45,6 @@
     "rollup-plugin-commonjs": "^8.0.2",
     "rollup-plugin-node-resolve": "^3.0.0"
   },
-  "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
-    "test": "",
-    "pretest": "npm run build"
-  },
-  "files": [
-    "dist"
-  ],
   "peerDependencies": {
     "react": "^16.4.0"
   }
