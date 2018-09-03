@@ -1,0 +1,6 @@
+{
+  "extends": "@anansi",
+  "env": {
+    "jest": true
+  }
+}

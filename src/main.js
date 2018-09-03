@@ -1,1 +1,3 @@
-export CRUD = "so CRUDy"
+const CRUD = 'so CRUDy'
+
+export { CRUD }
